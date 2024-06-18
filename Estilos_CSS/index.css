@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-links {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.image-item {
+    text-align: center;
+}
+.image-links a {
+    display: block;
+    margin: 10px;
+}
+.image-links img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+}

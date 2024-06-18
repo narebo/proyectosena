@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos_CSS/ad_funcionarios.css">
+    <title>Gestión de Funcionarios</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENES/1.png" alt="Logo de la Empresa">
+            <h1>Gestión de Funcionarios</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interfaz_admin.html">Atras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Agregar Funcionario</h2>
+    <form id="employeeForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="area">Área de trabajo:</label>
+        <select id="area" name="area" required>
+            <option value="Chef">Chef</option>
+            <option value="Mesero">Mesero</option>
+            <option value="Cajero">Cajero</option>
+        </select><br>
+        
+        <button type="button" onclick="addEmployee()">Agregar Funcionario</button>
+    </form>
+
+    <h2>Funcionarios</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Área</th>
+                <th>Usuario Creado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable">
+            
+        </tbody>
+    </table>
+
+    <h2>Asignar Usuario</h2>
+    <form id="userForm">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <label for="employeeEmail">Email del Funcionario:</label>
+        <input type="email" id="employeeEmail" name="employeeEmail" required><br>
+        
+        <button type="button" onclick="assignUser()">Asignar Usuario</button>
+    </form>
+<script src="Script_JS/ad_funcionarios.js"></script>
+</body>
+</html>

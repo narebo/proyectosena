@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos_CSS/ad_fi_aperturacaja.css">
+    <title>Apertura de Caja</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENES/1.png" alt="Logo de la Empresa">
+            <h1>Apertura de Caja</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interfaz_admin.html">Atras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Apertura de Caja</h1>
+        <form id="apertura_caja_form">
+            <label for="ingreso_dinero">Ingrese el valor inicial:</label><br>
+            <input type="number" id="ingreso_dinero" name="ingreso_dinero" required><br><br>
+            <button type="submit">Confirmar</button>
+        </form>
+        <div id="valor_ingresado"></div>
+        <div id="acciones">
+            <button id="confirmar_btn" style="display: none;">Confirmar</button>
+            <button id="modificar_btn" style="display: none;">Modificar Valor</button>
+        </div>
+    </div>
+    <script src="Script_JS/ad_fi_aperturacaja.js"></script>
+</body>
+</html>
