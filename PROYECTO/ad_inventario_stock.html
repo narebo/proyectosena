@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos_CSS/ad_inventario_stock.css">
+    <title>Gestión de Stock</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENES/1.png" alt="Logo de la Empresa">
+            <h1>Stock</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interfaz_admin.html">Atras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Gestión de Stock</h1>
+
+    <div class="form-container">
+        <form id="productForm" action="agregar_producto.php" method="post">
+            <label for="product">Producto:</label>
+            <input type="text" id="product" name="product" required>
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </div>
+    
+
+   
+        <tbody>
+            
+        </tbody>
+    </table>
+<script src="Script_JS/ad_inventario_stock.js"></script>
+</body>
+</html>

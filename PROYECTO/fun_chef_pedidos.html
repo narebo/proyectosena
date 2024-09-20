@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos_CSS/fun_chef_pedidos.css">
+    <title>Pedidos para Chef</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENES/1.png" alt="Logo de la Empresa">
+            <h1>Pedidos</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interfaz_chef.html">Atras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Pedidos para el Chef</h1>
+    
+    <div class="pedido">
+        <h3>Producto: Ensalada César</h3>
+        <p>Nota del mesero: Sin crutones, por favor.</p>
+        <button onclick="marcarListo(this)">Listo</button>
+    </div>
+
+    <div class="pedido">
+        <h3>Producto: Pizza Margherita</h3>
+        <p>Nota del mesero: Extra queso.</p>
+        <button onclick="marcarListo(this)">Listo</button>
+    </div>
+
+    <div class="pedido">
+        <h3>Producto: Sopa de Tomate</h3>
+        <p>Nota del mesero: Sin sal.</p>
+        <button onclick="marcarListo(this)">Listo</button>
+    </div>
+    <script src="Script_JS/fun_chef_pedidos.js"></script>
+</body>
+</html>

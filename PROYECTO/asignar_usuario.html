@@ -1,0 +1,11 @@
+<form action="asignar_usuario.php" method="POST">
+    <input type="hidden" name="id_funcionario" value="<?php echo $_GET['id_funcionario']; ?>">
+
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <input type="submit" value="Asignar Usuario">
+</form>

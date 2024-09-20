@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos_CSS/ad_ca_categorias.css">
+    <title>Gestión de Categorías</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENES/1.png" alt="Logo de la Empresa">
+            <h1>Categorías</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interfaz_admin.html">Atras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h2>Agregar Categoría</h2>
+        <div class="form-group">
+            <label for="categoria-id">Número:</label>
+            <input type="number" id="categoria-id">
+        </div>
+        <div class="form-group">
+            <label for="categoria-nombre">Nombre:</label>
+            <input type="text" id="categoria-nombre">
+        </div>
+        <div class="form-group">
+            <label for="categoria-descripcion">Descripción:</label>
+            <textarea id="categoria-descripcion"></textarea>
+        </div>
+        <button onclick="agregarCategoria()">Agregar</button>
+    </div>
+
+    <table id="tabla-categorias">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script src="Script_JS/ad_ca_categorias.js"></script>
+</body>
+</html>

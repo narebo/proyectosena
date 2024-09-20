@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos_CSS/fun_cajero_tomarpedido.css">
+    <title>Toma de Pedidos</title>   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="IMAGENES/1.png" alt="Logo de la empresa" height="50"></a>
+        </div>
+        <h1>Toma de Pedidos</h1>
+        <nav>
+            <ul>
+                <li><a href="interfaz_cajero.html">Atras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mesas">
+        <div class="mesa" onclick="abrirMenu(1)">Mesa 1</div>
+        <div class="mesa" onclick="abrirMenu(2)">Mesa 2</div>
+        <div class="mesa" onclick="abrirMenu(3)">Mesa 3</div>
+        <div class="mesa" onclick="abrirMenu(4)">Mesa 4</div>
+        <div class="mesa" onclick="abrirMenu(5)">Mesa 5</div>
+        <div class="mesa" onclick="abrirMenu(6)">Mesa 6</div>
+        <div class="mesa" onclick="abrirMenu(7)">Mesa 7</div>
+        <div class="mesa" onclick="abrirMenu(8)">Mesa 8</div>
+        <div class="mesa" onclick="abrirMenu(9)">Mesa 9</div>
+        <div class="mesa" onclick="abrirMenu(10)">Mesa 10</div>
+        <div class="mesa" onclick="abrirMenu(11)">Mesa 11</div>
+        <div class="mesa" onclick="abrirMenu(12)">Mesa 12</div>
+    </div>
+
+   
+    <div id="menu1" class="menu">
+        <h2>Menú de la Mesa 1</h2>
+       
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu2" class="menu">
+        <h2>Menú de la Mesa 2</h2>
+       
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu3" class="menu">
+        <h2>Menú de la Mesa 3</h2>
+        
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu4" class="menu">
+        <h2>Menú de la Mesa 4</h2>
+        
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu5" class="menu">
+        <h2>Menú de la Mesa 5</h2>
+       
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+        
+    <div id="menu6" class="menu">
+        <h2>Menú de la Mesa 6</h2>
+      
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu7" class="menu">
+        <h2>Menú de la Mesa 7</h2>
+       
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu8" class="menu">
+        <h2>Menú de la Mesa 8</h2>
+        
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu9" class="menu">
+        <h2>Menú de la Mesa 9</h2>
+        
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu10" class="menu">
+        <h2>Menú de la Mesa 10</h2>
+       
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu11" class="menu">
+        <h2>Menú de la Mesa 11</h2>
+        
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+
+    <div id="menu12" class="menu">
+        <h2>Menú de la Mesa 12</h2>
+        
+        <button onclick="agregarProducto('Producto 1', 15000)">Hambuerguesa sensilla ($15.000)</button>
+        <button onclick="agregarProducto('Producto 2', 18000)">Hambuerguesa con papa ($18.000)</button>
+        <button onclick="agregarProducto('Producto 3', 16000)">Hambuerguesa encebollada ($16.000)</button>
+        <button onclick="agregarProducto('Producto 4', 20000)">Hambuerguesa en combo ($20.000)</button>
+        <button onclick="agregarProducto('Producto 5', 13000)">Hawaiana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 6', 13000)">Napolitana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 7', 13000)">Pimentón ($13.000)</button>
+        <button onclick="agregarProducto('Producto 8', 13000)">Vegana ($13.000)</button>
+        <button onclick="agregarProducto('Producto 9', 10000)">Cervezas($10.000)</button>
+        <button onclick="agregarProducto('Producto 10', 10000)">Jugos ($10.000)</button>
+        <button onclick="agregarProducto('Producto 11', 10000)">Calientes ($10.000)</button>
+        <button onclick="agregarProducto('Producto 12', 10000)">Gaseosas ($10.000)</button>
+        
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+
+    <div id="pedido" class="pedido">
+        <h2>Detalle del Pedido</h2>
+        <ul id="lista-pedido">
+            <!-- Aquí se mostrarán los productos agregados -->
+        </ul>
+        <p>Total: $<span id="total">0</span></p>
+
+        <!-- Formulario para enviar el pedido a la base de datos -->
+        <form id="pedidoForm" method="post" action="procesar_pedido.php" style="display:none;">
+            <input type="hidden" name="mesa" id="mesa">
+            <input type="hidden" name="producto" id="producto">
+            <input type="hidden" name="precio" id="precio">
+        </form>
+        
+        
+        <button onclick="modificarPedido()">Modificar Pedido</button>
+    </div>
+
+    <script src="Script_JS/fun_cajero_tomarpedido.js"></script>
+</body>
+</html>

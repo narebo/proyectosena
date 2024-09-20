@@ -1,0 +1,177 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #363636;
+}
+
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste de la clase .logo para alinear el texto "Inventario" y la imagen del logo en horizontal */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Ajusta el tamaño de la imagen si es necesario */
+    width: auto;
+    border-radius: 10px; 
+    margin-right: 50px; /* Espacio entre el logo y la palabra "Inventario" */
+}
+
+.logo h1 {
+    font-size: 36px; /* Ajusta el tamaño del texto si es necesario */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #dba134;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.columna1, .columna2 {
+    flex: 1;
+}
+
+.columna1 {
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.columna2 h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.columna2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boton {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    transform-origin: top;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #dbd8d8;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}

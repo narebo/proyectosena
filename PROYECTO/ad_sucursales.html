@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos_CSS/ad_sucursales.css">
+    <title>Sucursales</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGENES/1.png" alt="Logo de la Empresa">
+            <h1>Sucursales</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interfaz_admin.html">Atras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="branchForm">
+        <label for="branchName">Nombre de la Sucursal:</label>
+        <input type="text" id="branchName" required>
+        
+        <label for="branchAddress">Dirección:</label>
+        <input type="text" id="branchAddress" required>
+        
+        <label for="branchPhone">Teléfono:</label>
+        <input type="text" id="branchPhone" required>
+        
+        <label for="branchEmail">Email:</label>
+        <input type="email" id="branchEmail" required>
+        
+        <label for="isMainBranch">
+            <input type="checkbox" id="isMainBranch">
+            Sede Principal
+        </label>
+        
+        <button type="submit">Agregar Sucursal</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Sede Principal</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="branchList">
+        </tbody>
+    </table>
+    <script src="Script_JS/ad_sucursales.js"></script>
+</body>
+</html>

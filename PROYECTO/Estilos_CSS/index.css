@@ -1,0 +1,68 @@
+/* Estilo del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+/* Contenedor principal de las imágenes y enlaces */
+.image-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    max-width: 800px; /* Ajustar el ancho máximo */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+}
+
+/* Cada imagen con su respectivo texto */
+.image-item {
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.image-item:hover {
+    transform: translateY(-10px); /* Efecto de elevar ligeramente la imagen */
+}
+
+/* Enlaces e imágenes */
+.image-links a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.image-links img {
+    max-width: 150px;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.image-links img:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+    transform: scale(1.05); /* Efecto de zoom ligero */
+}
+
+/* Estilo del texto */
+.image-item p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+/* Cambio de color del texto al hacer hover */
+.image-item:hover p {
+    color: #2980b9; /* Color de texto al hacer hover */
+}
